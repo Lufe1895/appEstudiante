@@ -1,0 +1,85 @@
+extends ../layout
+
+block content
+    h1 Formulario
+    p
+        input(type="text")
+        button Buscar
+
+    form
+        fieldset
+            legend Datos Personales
+            p Nombre: &nbsp;
+                input(type="text")
+            p Apellido Paterno: &nbsp;
+                input(type="text")
+            p Apellido Materno: &nbsp;
+                input(type="text")
+            p Sexo: &nbsp;
+                select 
+                    option(value="F") Femenino
+                    option(valie="M") Masculino
+            p CURP: &nbsp;
+                input(type="text")
+            p Fecha de Nacimiento: &nbsp;
+                input(type="date")
+            p Estado: &nbsp;
+                select 
+                    option(value="0") Inactivo
+                    option(value="1") Activo
+            p Promedio Anterior: &nbsp;
+                input(type="number", min="6", max="10")
+            p Escuela de Procedencia: &nbsp;
+                input(type="text")
+            p Fecha de Egreso:
+                imput(type="text")
+            p Estado Civil:
+                select
+                    option Soltero
+                    option Casado
+                    option Viudo
+                    option Divorciado
+                    option Separado
+                    option Unión Libre
+                    option Conviviente Civil
+        fieldset
+            legend Datos Médicos
+            p Tipo de Sangre: &nbsp;
+                input(type="text")
+            p Número del Seguro Social: &nbsp;
+                input(type="text")
+            p Alergias: &nbsp;
+
+        fieldset
+            legend Datos del Tutor
+            p Nombre: &nbsp;
+                input(type="text")
+            p Apellido Paterno: &nbsp;
+                input(type="text")
+            p Apellido Materno: &nbsp;
+                input(type="text")
+            p Sexo: &nbsp;
+                select 
+                    option(value="F") Femenino
+                    option(valie="M") Masculino
+            p Dirección: &nbsp;
+                input(type="text")
+            p Número: &nbsp;
+                input(type="text")
+            p Municipio: &nbsp;
+                input(type="text")
+            p Colonia: &nbsp;
+                input(type="text")
+            p Estado: &nbsp;
+                input(type="text")
+            p País: &nbsp;
+                input(type="text")
+            p Código Postal: &nbsp;
+                input(type="text")
+            p Correo Electrónico: &nbsp;
+                input(type="text")
+            p Teléfono de Casa: &nbsp;
+                input(type="text")
+            p Teléfono Celular: &nbsp;
+                input(type="text")
+        input(type="submit" value="Guardar")
